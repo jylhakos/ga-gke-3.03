@@ -16,7 +16,7 @@ RUN rm -rf package-lock.json
 
 RUN apk --no-cache add curl
 
-COPY ./todo-backend-db/package-lock.json ./
+COPY ./todo-backend-db/package*.json ./
 
 RUN npm ci
 
