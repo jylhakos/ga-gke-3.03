@@ -1,6 +1,6 @@
 # This is 3.03 workflow with Github Actions
 
-name: Release application
+name: Release 3.03
 on:
   push:
 env:
