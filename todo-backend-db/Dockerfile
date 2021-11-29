@@ -81,9 +81,9 @@ RUN rm -rf package-lock.json
 
 RUN apk --no-cache add curl
 
-COPY package* ./
+COPY package-lock.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
 
