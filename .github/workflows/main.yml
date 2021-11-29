@@ -1,4 +1,4 @@
-# This is 3.03 workflow with Github Actions
+# This is 3.03 workflow with Github Actions and GKE
 
 name: Release 3.03
 on:
