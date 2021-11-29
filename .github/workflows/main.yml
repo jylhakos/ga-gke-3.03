@@ -24,6 +24,9 @@ jobs:
     - run: gcloud --quiet auth configure-docker
     - run: gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
     - name: Build
+      with:
+        context: ./todo-backend-db
+        dockerfile: ./todo-backend-db/Dockerfile
       run: |-
         docker build \
           --tag "gcr.io/$PROJECT_ID/$IMAGE:${GITHUB_REF#refs/heads/}-$GITHUB_SHA" \
