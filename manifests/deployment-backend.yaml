@@ -4,7 +4,7 @@ metadata:
   name: todos-backend-db-dep
 spec:
   replicas: 1
-  progressDeadlineSeconds: 120
+  progressDeadlineSeconds: 240
   selector:
     matchLabels:
       app: todos-backend-db
