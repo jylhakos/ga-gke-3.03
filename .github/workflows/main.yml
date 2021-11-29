@@ -8,7 +8,7 @@ env:
   GKE_CLUSTER: app-3-dwk-cluster
   GKE_ZONE: europe-west4-a
   IMAGE: todos
-  DEPLOYMENT: todos-backend-db-dep
+  DEPLOYMENT_NAME: todos
 jobs:
   build-publish-deploy:
     name: Build, Publish and Deploy
