@@ -1,14 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- manifests/postgresql.yaml
-- manifests/service-postgresql.yaml
-- manifests/service-backend.yaml
-- manifests/service-response.yaml
-- manifests/service-finder.yaml
-- manifests/ingress.yaml
-- manifests/deployment-backend.yaml
-- manifests/deployment-frontend.yaml
+- ../manifests/postgresql.yaml
+- ../manifests/service-postgresql.yaml
+- ../manifests/service-backend.yaml
+- ../manifests/service-response.yaml
+- ../manifests/service-finder.yaml
+- ../manifests/ingress.yaml
+- ../manifests/deployment-backend.yaml
+- ../manifests/deployment-frontend.yaml
 images:
 - name: PROJECT/IMAGE_BACKEND
   newName: jylhakos/todo-backend-db:3.0.0
