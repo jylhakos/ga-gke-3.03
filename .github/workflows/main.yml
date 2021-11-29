@@ -7,7 +7,7 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: app-3-dwk-cluster
   GKE_ZONE: europe-west4-a
-  IMAGE: dwk-environments
+  IMAGE: todos
 jobs:
   build-publish-deploy:
     name: Build, Publish and Deploy
